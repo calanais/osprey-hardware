@@ -9,82 +9,8 @@
 
   <div class="section">
     <div class="container">
-
-      <div class="columns">
-
-
-        <aside class="column is-one-fifth is-narrow-mobile is-fullheight section is-hidden-mobile">
-          <p class="menu-label is-hidden-touch">Navigation</p>
-          <ul class="menu-list">
-            <li>
-              <a href="#" class="">
-                <span class="icon">
-                  <i class="fa fa-home"></i>
-                </span> Home
-              </a>
-            </li>
-            <li>
-              <a href="#" class="is-active">
-                <span class="icon">
-                  <i class="fa fa-user"></i>
-                </span> Using
-              </a>
-
-              <ul>
-                {% for item in site.pages %} {%if item.categories == 'usage_docs' %}
-                <li>
-                  <a href="{{ item.url }}">
-                    <span class="icon is-small">
-                    </span> {{ item.title}}
-                  </a>
-                </li>
-                {% endif %} {% endfor %}
-
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="">
-                <span class="icon">
-                  <i class="fa fa-wrench"></i>
-                </span> Make-it-yourself
-              </a>
-
-              <ul>
-                {% for item in site.pages %} {%if item.categories == 'diy_docs' %}
-                <li>
-                  <a href="{{ item.url }}">
-                    <span class="icon is-small">
-                    </span> {{ item.title}}
-                  </a>
-                </li>
-                {% endif %} {% endfor %}
-
-              </ul>
-            </li>
-
-            <li>
-              <a href="#" class="">
-                <span class="icon">
-                  <i class="fa fa-info"></i>
-                </span> Ready-made
-              </a>
-            </li>
-          </ul>
-        </aside>
-
-        <div class="column">
-          {{ content }}
-        </div>
-
-      </div>
-
-
-
-
-
-
-    </div>
-    
+        {{ content }}
+    </div>    
   </div>
   {% include footer.html %}
 </body>

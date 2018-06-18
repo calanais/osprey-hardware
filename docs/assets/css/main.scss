@@ -5,45 +5,36 @@
 @import "sass/utilities/functions";
 
 // 2. Set your own initial variables
-// Update blue
-// $blue: #72d0eb;
-// // Add pink and its invert
-// $pink: #ffb3b3;
-// $pink-invert: #fff;
-// // Add a serif family
-//$family-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
-$primary: #564787;
+// $navbar-height:4rem;
+/* Coolors Exported Palette - coolors.co/c2948a-7ea8be-564787-f8f0fb-dbcbd8 */
+
+/* RGB */
+$color1: rgba(194, 148, 138, 1);
+$color2: rgba(126, 168, 190, 1);
+$color3: rgba(86, 71, 135, 1);
+$color4: rgba(248, 240, 251, 1);
+$color5: rgba(219, 203, 216, 1);
+$color1-invert: findColorInvert($color1);
+$color2-invert: findColorInvert($color2);
+$color3-invert: findColorInvert($color3);
+$color4-invert: findColorInvert($color4);
+$color5-invert: findColorInvert($color5);
+
+$primary: $color3;
 $link: $primary;
-$primary-invert: findColorInvert($primary);
+$primary-invert: $color3-invert;
 $grey-darker: #444444;
 $grey-dark: #6E6E6E;
-$seconday: #C2948A;
-$tertiary: #8b829d;
-// 3. Set the derived variables
-// // Use the new pink as the primary color
-// $primary: $pink;
-// $primary-invert: $pink-invert;
-// // Use the existing orange as the danger color
-// $danger: $orange;
-// // Use the new serif family
-// $family-primary: $family-serif;
+$seconday: $color1;
 
-// // 4. Setup your Custom Colors
-// $linkedin: #0077b5;
-// $linkedin-invert: findColorInvert($linkedin);
-// $twitter: #55acee;
-// $twitter-invert: findColorInvert($twitter);
-// $github: #333;
-// $github-invert: findColorInvert($github);
 
 // 5. Add new color variables to the color map.
 @import "sass/utilities/derived-variables";
-// $addColors: (
-//   "twitter":($twitter, $twitter-invert),
-//   "linkedin": ($linkedin, $linkedin-invert),
-//   "github": ($github, $github-invert)
-// );
-// $colors: map-merge($colors, $addColors);
+
+h1 {
+    @extend .title;
+}
 
 // 6. Import the rest of Bulma
 @import "bulma";
+
