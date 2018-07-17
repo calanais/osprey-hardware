@@ -27,7 +27,7 @@
 
             {% for item in site.pages %} {%if item.categories == 'usage_docs' %}
    
-              <a class="navbar-item" href="{{ item.url }}">
+              <a class="navbar-item" href="{{ site.github.url }}{{ item.url }}">
                  {{ item.title}}
               </a>
         
@@ -43,7 +43,7 @@
   
               {% for item in site.pages %} {%if item.categories == 'diy_docs' %}
      
-                <a class="navbar-item" href="{{ item.url }}">
+                <a class="navbar-item" href="{{ site.github.url }}{{ item.url }}">
                    {{ item.title}}
                 </a>
           

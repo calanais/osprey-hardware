@@ -5,4 +5,4 @@ categories: usage_docs
 tags: [documentation,diy]
 ---
 
-Notes on how to create the video
+Some notes on how to create the video

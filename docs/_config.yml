@@ -9,6 +9,9 @@ highlighter:         rouge
 permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
+baseurl: "/osprey-hardware"
+github:
+  url: "/osprey-hardware"
 sass:
   sass_dir: assets/css
   style: :nested

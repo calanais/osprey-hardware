@@ -10,6 +10,6 @@ title: Home
 ## Documentation 
   {% for item in site.pages %}
 {%if item.categories == 'documentation' %}
-- [{{ item.title}}]({{ item.url }})
+- [{{ item.title}}]({{ site.github.url }}{{ item.url }})
 {% endif %}
   {% endfor %}
